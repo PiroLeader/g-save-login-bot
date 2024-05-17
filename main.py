@@ -12,11 +12,11 @@ from dotenv import load_dotenv
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 load_dotenv(override=True)
 
-API_ID = int(os.getenv("TG_API_ID", "5120"))
-API_HASH = os.getenv("TG_API_HASH", "1fda88a5d1de478bce198e")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "token")
-MONGODB_URL = os.getenv("MONGODB_URL", "mongouri")
-BOT_USERNAME = None
+API_ID = int(os.getenv("TG_API_ID", "14914136"))
+API_HASH = os.getenv("TG_API_HASH", "e41475e32c4cedf6b5a2b493a32308c3")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6376712320:AAH8HO3g6f1OIXXLZGTqVPj9_fxWRlflLRU")
+MONGODB_URL = os.getenv("MONGODB_URL", "mongodb+srv://CrazyLeader:leadercrazy@crazycluster0l.i3juemo.mongodb.net/?retryWrites=true&w=majority")
+BOT_USERNAME = Savedl_bot
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 mongo_client = MongoClient(MONGODB_URL, server_api=ServerApi('1'))
 download_folder = 'files'
